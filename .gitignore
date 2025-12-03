@@ -1,0 +1,11 @@
+# Ignore all files and folders starting with a dot
+.*
+
+# But keep the .gitignore file itself
+!.gitignore
+
+# Optionally keep .gitattributes if you use it
+!.gitattributes
+
+# Optionally keep .github workflows if you use GitHub Actions
+!.github/
