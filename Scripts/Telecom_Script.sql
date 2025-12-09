@@ -212,6 +212,17 @@ SELECT
 FROM
 	vw_churn_data;
 
+COPY (
+	SELECT
+		*
+	FROM
+		vw_churn_data
+) 
+TO 'D:\Data Analyst - Tutorial\Portfolio Projects\Telecom\SOURCE\vw_churn_data.csv' 
+WITH (
+	FORMAT CSV,
+	HEADER
+);
 	
 CREATE VIEW vw_join_data AS
 SELECT
@@ -225,3 +236,15 @@ SELECT
 	*
 FROM 
 	vw_join_data;
+
+COPY (
+	SELECT
+		*
+	FROM
+		vw_churn_data
+) 
+TO 'D:\Data Analyst - Tutorial\Portfolio Projects\Telecom\SOURCE\vw_join_data.csv' 
+WITH (
+	FORMAT CSV,
+	HEADER
+);
